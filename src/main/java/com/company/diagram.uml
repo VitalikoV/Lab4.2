@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="385.2506254039217" y="66.60476881103926">com.company.Main</node>
+    <node x="534.4144881442523" y="261.37950393806636">FileParserTest</node>
+    <node x="251.85127218339142" y="207.96323541727372">StringControllerTest</node>
+    <node x="-103.01716325572443" y="-13.215220297923999">com.company.StringController</node>
+    <node x="623.6101995322281" y="82.19972772913167">com.company.FileParser</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Compact" zoom="1.0126829268292683" showDependencies="true" x="408.5" y="172.0" />
+  <SelectedNodes>
+    <node>StringControllerTest</node>
+    <node>com.company.StringController</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

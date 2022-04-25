@@ -10,16 +10,18 @@ public class StringControllerTest {
     @Test
     @DisplayName("Checking collocation")
     void testCollocations(){
+        StringController sc = new StringController();
         String data = "there are collocations";
-        Boolean isCollocation = StringController.ifAnyWordStartsWithLetter(data, 'a');
+        Boolean isCollocation = sc.ifAnyWordStartsWithLetter(data, 'a');
         assertTrue(isCollocation);
     }
 
     @Test
     @DisplayName("Checking no collocation")
     void testNotCollocations(){
+        StringController sc = new StringController();
         String data = "there no collocations starting with a ";
-        Boolean isCollocation = StringController.ifAnyWordStartsWithLetter(data, 'a');
+        Boolean isCollocation = sc.ifAnyWordStartsWithLetter(data, 'a');
         assertFalse(isCollocation);
     }
 }

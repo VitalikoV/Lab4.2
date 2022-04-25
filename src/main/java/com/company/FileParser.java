@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class FileParser {
-    public static String readCSVFile(String fileName) {
+    public String readCSVFile(String fileName) {
         String data = "";
         Path pathToFile = Paths.get(fileName);
         try (BufferedReader br = Files.newBufferedReader(pathToFile,
@@ -20,7 +20,7 @@ public class FileParser {
         return data;
     }
 
-    public static void generateCSVFile(String data, String fileName) throws IOException {
+    public void generateCSVFile(String data, String fileName) throws IOException {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileName + ".txt"), "UTF-8"));
         bw.write(data);
         bw.flush();

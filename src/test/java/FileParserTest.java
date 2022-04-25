@@ -13,8 +13,9 @@ public class FileParserTest {
     @Test
     @DisplayName("Simple generation of file and checking if it contains the value")
     void testGenerateCSV() throws IOException {
-        FileParser.generateCSVFile("test file generation", "test");
-        String data = FileParser.readCSVFile("test.txt");
+        FileParser fp = new FileParser();
+        fp.generateCSVFile("test file generation", "test");
+        String data = fp.readCSVFile("test.txt");
         assertEquals("test file generation", data);
 
     }

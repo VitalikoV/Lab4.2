@@ -13,13 +13,15 @@ public class Main {
 //        String dataWithBWords = FileParser.readCSVFile("with_b_words.txt");
 //        System.out.println(StringController.getNumberOfWordsThatStartWithLetter(dataWithBWords, 'b'));
 
-        FileParser.generateCSVFile("test without words that starts with a", "without_a");
-        String data = FileParser.readCSVFile("without_a.txt");
-        System.out.println(StringController.ifAnyWordStartsWithLetter(data, 'a'));
+        FileParser fp = new FileParser();
+        StringController sc = new StringController();
+        fp.generateCSVFile("test without words that starts with a", "without_a");
+        String data = fp.readCSVFile("without_a.txt");
+        System.out.println("test without words that starts with a: " + sc.ifAnyWordStartsWithLetter(data, 'a'));
 
-        FileParser.generateCSVFile("test with any word that starts with a", "with_a");
-        String dataWithA = FileParser.readCSVFile("with_a.txt");
-        System.out.println(StringController.ifAnyWordStartsWithLetter(dataWithA, 'a'));
+        fp.generateCSVFile("test with any word that starts with a", "with_a");
+        String dataWithA = fp.readCSVFile("with_a.txt");
+        System.out.println("test with any word that starts with a: " + sc.ifAnyWordStartsWithLetter(dataWithA, 'a'));
 
     }
 }
